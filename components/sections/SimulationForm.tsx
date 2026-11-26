@@ -60,7 +60,7 @@ export function SimulationForm() {
       <span className="simulation-success-mark"><Icon name="check" size={23}/></span>
       <p className="simulation-kicker">SIMULAÇÃO PREPARADA</p>
       <h3 id="simulation-card-title">Pronto. Só falta enviar sua solicitação.</h3>
-      <p>O WhatsApp vai abrir com seus dados organizados para a equipe Sollar.</p>
+      <p>O WhatsApp vai abrir com seus dados organizados para a equipe Soltex.</p>
       <a className="button button-solar" href={whatsappUrl} target="_blank" rel="noreferrer">
         <Image src="/whatsapp-icon.png" alt="" width={24} height={24}/>
         Abrir WhatsApp
@@ -79,7 +79,7 @@ export function SimulationForm() {
             <input ref={nameRef} name="name" autoComplete="name" value={values.name} onChange={(event) => update('name', event.currentTarget.value)} placeholder="Como podemos te chamar?" aria-invalid={Boolean(error && !values.name.trim())} aria-describedby={error ? 'simulation-error' : undefined}/>
           </label>
           <label>Cidade da instalação
-            <input name="city" autoComplete="address-level2" value={values.city} onChange={(event) => update('city', event.currentTarget.value)} placeholder="Ex.: Arcoverde" aria-invalid={Boolean(error && !values.city.trim())} aria-describedby={error ? 'simulation-error' : undefined}/>
+            <input name="city" autoComplete="address-level2" value={values.city} onChange={(event) => update('city', event.currentTarget.value)} placeholder="Ex.: Aurora" aria-invalid={Boolean(error && !values.city.trim())} aria-describedby={error ? 'simulation-error' : undefined}/>
           </label>
           <label>Valor médio mensal da conta
             <span className="currency-input"><span aria-hidden="true">R$</span><input name="bill" inputMode="decimal" value={values.bill} onChange={(event) => update('bill', event.currentTarget.value)} placeholder="450" aria-invalid={Boolean(error && !isValidBill(values.bill))} aria-describedby={error ? 'simulation-error' : undefined}/></span>

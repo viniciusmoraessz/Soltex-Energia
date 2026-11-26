@@ -1,4 +1,4 @@
-# Sollar Energ
+# Soltex Energia Solar
 
 Landing page em Next.js 14, TypeScript, Tailwind e Framer Motion.
 
@@ -22,7 +22,7 @@ NEXT_PUBLIC_GA_ID=G-BLN3BNT5N2
 NEXT_PUBLIC_META_PIXEL_ID=
 ```
 
-O formulário valida os campos e encaminha para o WhatsApp com a mensagem preenchida. O contato padrão da Sollar é 87 8164-1809. Antes da publicação, confirme o número, CNPJ, regiões e métricas.
+O formulário valida os campos e encaminha para o WhatsApp com a mensagem preenchida. O contato padrão da Soltex é 87 8164-1809. Antes da publicação, confirme o número, CNPJ, regiões e métricas.
 
 Sem `NEXT_PUBLIC_SITE_URL`, o site não publica canonical, sitemap ou referência de sitemap com domínio inventado. Defina essa variável assim que o domínio oficial ou endereço Vercel estiver confirmado.
 
