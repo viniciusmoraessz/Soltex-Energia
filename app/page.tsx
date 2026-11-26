@@ -7,7 +7,7 @@ import { SimulationForm } from '@/components/sections/SimulationForm';
 import { Icon, type IconName } from '@/components/Icon';
 
 const nav = ['Início', 'Sobre', 'Soluções', 'Como funciona', 'Obras', 'FAQ'];
-const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '558781641809';
+const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '558898347697';
 const whatsappUrl = `https://wa.me/${whatsappNumber}`;
 const solutions = [
   ['Residencial', 'Um sistema desenhado para o ritmo e o consumo da sua casa.', 'home'],
@@ -51,7 +51,7 @@ export default function Home() {
     ].map((project) => <article key={project.src} className="work-card"><Image src={project.src} alt={project.alt} fill loading="lazy" sizes="(max-width: 780px) 100vw, 33vw"/><span>{project.title}<b>{project.place}</b></span></article>)}</div></div></section>
     <section id="faq" className="section light faq"><div className="wrap two-col"><Reveal><p className="eyebrow dark-ink"><span/> FAQ</p><h2>Perguntas frequentes sobre energia solar</h2><p>Uma boa decisão começa com informação objetiva. Se a sua dúvida não estiver aqui, fale com um consultor.</p></Reveal><div className="faq-list">{faqs.map(([question, answer], i) => <div className="faq-item" key={question}><button aria-expanded={openFaq === i} onClick={() => setOpenFaq(openFaq === i ? null : i)}>{question}<span><Icon name={openFaq === i ? 'minus' : 'plus'} size={21}/></span></button>{openFaq === i && <p>{answer}</p>}</div>)}</div></div></section>
     <section id="simulacao" className="final-cta dark"><div className="panel-grid" aria-hidden="true"/><div className="wrap final-layout"><Reveal><p className="eyebrow"><span/> Simulação gratuita</p><h2>Solicite sua simulação de energia solar</h2><p>Informe sua cidade e o valor médio da conta. A equipe Soltex avalia seu perfil e apresenta os próximos passos.</p></Reveal><Reveal><SimulationForm /></Reveal></div></section>
-      <footer className="footer"><div className="wrap footer-top"><a className="brand" href="#inicio"><Image src="/soltex-logo.png" alt="Soltex Energia Solar" width={150} height={110}/></a><div><b>Sede cadastral</b><p>Rua General Sampaio, 40<br/>Centro · Aurora–CE · CEP 63360-000</p></div><div><b>Contato</b><p><a className="footer-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer"><Image src="/whatsapp-icon.png" alt="" width={24} height={24}/> Chamar no WhatsApp</a><br/><a href="tel:+558781641809">87 8164-1809</a></p></div></div><div className="wrap footer-bottom"><span>© {new Date().getFullYear()} Soltex Energia Solar.</span></div></footer>
+      <footer className="footer"><div className="wrap footer-top"><a className="brand" href="#inicio"><Image src="/soltex-logo.png" alt="Soltex Energia Solar" width={150} height={110}/></a><div><b>Sede cadastral</b><p>Rua General Sampaio, 40<br/>Centro · Aurora–CE · CEP 63360-000</p></div><div><b>Contato</b><p><a className="footer-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer"><Image src="/whatsapp-icon.png" alt="" width={24} height={24}/> Chamar no WhatsApp</a><br/><a href="tel:+558898347697">88 9834-7697</a></p></div></div><div className="wrap footer-bottom"><span>© {new Date().getFullYear()} Soltex Energia Solar.</span></div></footer>
     <a className="whatsapp-float" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="Chamar a Soltex Energia Solar no WhatsApp"><Image src="/whatsapp-icon.png" alt="" width={38} height={38}/></a>
   </main>;
 }

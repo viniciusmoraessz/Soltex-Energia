@@ -42,7 +42,7 @@ const localBusiness = {
       ...(siteUrl ? { url: siteUrl } : {}),
       logo: siteUrl ? `${siteUrl}/soltex-logo.png` : '/soltex-logo.png',
       image: ogImage || '/soltex-projeto-01.jpg',
-      telephone: '+55 87 8164-1809',
+      telephone: '+55 88 9834-7697',
       areaServed: [{ '@type': 'City', name: 'Aurora', containedInPlace: { '@type': 'AdministrativeArea', name: 'Ceará' } }],
       knowsAbout: ['Energia solar', 'Energia fotovoltaica', 'Instalação de painéis solares', 'Homologação de sistemas fotovoltaicos'],
       address: {
